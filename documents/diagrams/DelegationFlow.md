@@ -9,9 +9,9 @@ sequenceDiagram
     participant DelegationManager
     participant CaveatEnforcer
 
-    Delegator->>Delegator: Create off-chain delegation with caveat enforcers
-    Delegator->>Delegator: Sign off-chain delegation
-    Delegator->>Delegate: Send signed off-chain delegation
+    Delegator->>Delegator: Create delegation with caveat enforcers
+    Delegator->>Delegator: Sign delegation
+    Delegator->>Delegate: Send signed delegation
     Note right of Delegate: Hold delegation until redemption
 
     Delegate->>DelegationManager: redeemDelegations() with delegation & execution details
